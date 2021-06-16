@@ -1,0 +1,98 @@
+\documentclass[12pt]{article}
+\usepackage{mathptmx}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{titlesec}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{multicol}
+\hypersetup{
+  colorlinks=true,
+  urlcolor=blue
+}
+
+%TABLE SPACING CONFIGURATION
+\setlength{\tabcolsep}{15pt}
+\renewcommand{\arraystretch}{1.5}
+
+%FORMAT SECTION 
+\titleformat{\section}{}{}{0em}{\large \textbf}[\titlerule]
+%FORMAT SUBSECTION
+%\titleformat{\subsection}{}{}{0em}{\textbf}
+%\titlespacing{\subsection}{0em}{1ex}{1ex}
+
+%\titleformat{\par}{}{}{em}{\large}
+
+
+%LOGICAL STRUCTURE OF RESUME
+\begin{document}
+%Write your details here
+\section{Harsh Sheth\\ ycdtharsh@gmail.com $|$ $+$91-9407394270}
+%Career Objective
+\par{3rd year B.Tech Computer Science student at NIT Hamirpur with excellent academic record and keen interest in the field of web development.}
+
+\section{ACADEMIC QUALIFICATION}
+\begin{tabular}{|l|c|c|c|}
+  \hline
+  Program & Institution & CGPA & Completion \\
+  \hline
+  B.Tech(Computer Science \& Engg.) & NIT, Hamirpur & $8.23$ & present\\
+  XII & KV, CBSE Board & \ $92.4\%$ & 2018\\
+  X & KV, CBSE Board & 10 & 2016\\
+  \hline
+\end{tabular}
+
+\section{TECHNICAL SKILLS}
+\vspace{-1em}
+\begin{multicols}{2}
+\subsection*{Programming Languages: }
+\hrule
+\vspace{1em}
+\begin{itemize}
+  \item[$\blacksquare$]{\textbf{JavaScript}}
+  \item[$\blacksquare$]{C/C$++$}
+  \item[]{}
+  \item[]{}
+\end{itemize}
+\columnbreak
+\subsection*{Web Technologies \& Tools: }
+\hrule
+\vspace{1em}
+\begin{itemize}
+  \item[$\blacksquare$]{\textbf{React}}
+  \item[$\blacksquare$]{\textbf{NodeJs (Express)}}
+  \item[$\blacksquare$]{MongoDB/MySql}
+  \item[$\blacksquare$]{HTML/CSS}
+  \item[$\blacksquare$]{Git, Bash, \textbf{Vim}}
+\end{itemize}
+\end{multicols}
+
+\section{ACADEMIC PROJECTS}
+\subsection*{REST Countries}
+  \parbox{\textwidth}{ Made a frontend website which uses REST Countries API to collect data about different countries\\
+   and gives option to sort countries by continent. Also contains a display page for more details about each country and has a beautiful color theme switcher\\
+   View project at : \underline{\url{https://github.com/HARSH-SHETH/REST_Countries_API}}
+  }
+\subsection*{URL Shortener}
+\parbox{\textwidth}{ Built a URL Shortener site which takes a url and gives back a shortened url to the user.  
+\\ View project at : \underline{\url{https://github.com/HARSH-SHETH/url_shortener_site}}
+}
+
+\subsection*{Static Job Listing}
+\parbox{\textwidth}{ Built a Static Job Listing which allows searching of jobs and filtering according to the jobtitle
+\\ View project at : \underline{\url{https://github.com/HARSH-SHETH/STATIC_JOB_LISTINGS}}
+}
+\newpage
+\section{ACHIEVMENTS}
+\begin{enumerate}
+  \item Secured under 15,000 rank in JEE-Mains.
+  \item Won a National Level Certificate for alacritous performance in Youth Parliament.
+\end{enumerate}
+
+\section{Hobbies}
+\begin{enumerate}
+  \item Using opensource and commandline applications on Linux
+  \item Playing Chess, Football, TableTennis etc.
+\end{enumerate}
+
+\end{document}
