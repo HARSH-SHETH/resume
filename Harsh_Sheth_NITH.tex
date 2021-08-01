@@ -9,49 +9,41 @@
 \usepackage{enumitem}
 \hypersetup{
   colorlinks=true,
-  urlcolor=blue
+  urlcolor=cyan
 }
 
 %TABLE SPACING CONFIGURATION
-\setlength{\tabcolsep}{15pt}
-\renewcommand{\arraystretch}{1.5}
+% \setlength{\tabcolsep}{5pt}
+% \renewcommand{\arraystretch}{1.5}
+% SPACING CONFIGURATION
+\renewcommand{\baselinestretch}{0.9}
 
 %FORMAT SECTION 
 \titleformat{\section}{}{}{0em}{\large \textbf}[\titlerule]
-%FORMAT SUBSECTION
-%\titleformat{\subsection}{}{}{0em}{\textbf}
-%\titlespacing{\subsection}{0em}{1ex}{1ex}
-
-%\titleformat{\par}{}{}{em}{\large}
 
 
 %LOGICAL STRUCTURE OF RESUME
 \begin{document}
 %Write your details here
-\section{Harsh Sheth\\ ycdtharsh@gmail.com $|$ $+$91-9407394270 $|$  \url{www.linkedin.com/in/harsh-sheth-2101}}
-% \section{Harsh Sheth\\ ycdtharsh@gmail.com $|$ $+$91-9407394270 $|$ www.linkedin.com/in/harsh-sheth-2101}
-%Career Objective
-\par{\textit{3rd year B.Tech Computer Science student at NIT Hamirpur with excellent academic record and keen interest in the field of web development.}}
+\section{Harsh Sheth\\ \normalfont ycdtharsh@gmail.com $|$ \normalfont $+$91-9407394270 $|$  \href{https://www.linkedin.com/in/harsh-sheth-2101}{LinkedIn} $|$ \href{https://github.com/harsh-sheth}{Github}}
 
-\section{ACADEMIC QUALIFICATION}
+\section{EDUCATION}
 \begin{itemize}
-  \item[$\blacksquare$]{B.Tech(Dual Degree), CSE, {\normalsize \normalfont NIT Hamirpur, CGPA:\textbf{ 8.34}} \hfill \emph{present}} 
-% \vspace{0.1cm}
-  \item[$\blacksquare$]{XII CBSE Board, PCM, {\normalsize \normalfont KV No.1 Indore(MP), CGPA:\textbf{ 92.4\%}} \hfill \emph{2018}} 
+  \item{
+      \textbf{National Institute of Technology, Hamirpur} \hfill \textit{Hamirpur(HP), India}\\
+      Dual Degree CSE, CGPA: \textbf{8.34} \hfill \textit{2018 - present}
+  } 
+  \item{
+      \textbf{Kendriya Vidyalaya No.1} \hfill \textit{Indore(MP), India}\\
+      XII CBSE Board, CGPA: 92.4\% \hfill \textit{2018}
+  }
+  % \item{XII CBSE Board, PCM, {\normalsize \normalfont KV No.1 Indore(MP), CGPA:\textbf{ 92.4\%}} \hfill \emph{2018}} 
 % \vspace{0.2cm}
 \end{itemize}
-% \begin{tabular}{|l|c|c|c|}
-%   \hline
-%   Program & Institution & CGPA & Completion \\
-%   \hline
-%   B.Tech(Computer Science \& Engg.) & NIT, Hamirpur & $8.34$ & present\\
-%   XII & KV, CBSE Board & \ $92.4\%$ & 2018\\
-%   X & KV, CBSE Board & 10 & 2016\\
-%   \hline
-% \end{tabular}
 
 \section{TECHNICAL SKILLS}
 \begin{description}
+  \setlength{\itemindent}{\parindent}
   \item[\normalfont Languages:]{C, \textbf{\textit{Javascript}}, \textbf{\textit{NodeJS}}, Golang}
   \item[\normalfont Web Technologies:]{\textbf{\textit{Express}}, \textbf{\textit{ReactJS}}, HTML, CSS, Bootstrap}
   \item[\normalfont Databases:]{\textbf{\textit{MongoDB}}, MYSQL}
@@ -59,14 +51,15 @@
   \item[\normalfont Coursework:]{Data Structures, \textbf{\textit{Computer Networks}}, Operating Systems, DBMS}
 \end{description}
 
+% \section{WORK EXPERIENCE}
 
-\section{ACADEMIC PROJECTS}
+\section{PROJECTS}
 \subsection*{Whatsapp Bot \hfill \normalsize \textit{NodeJS, Bash, Heroku, MongoDB}}
   \parbox{\textwidth}{ Made a whatsapp bot that replies to the following commands:   
   \begin{itemize}
-    \item[$\blacksquare$]{[!miku sfw $<$category$>$] Send anime pics and gifs of different category}
-    \item[$\blacksquare$]{[!miku sticker] Generate sticker from any image, video or video\_url }
-    \item[$\blacksquare$]{[!miku reveal] Reveal last deleted message in a chat}
+    \item{[!miku sfw $<$category$>$] Send anime pics and gifs of different category}
+    \item{[!miku sticker] Generate sticker from any image, video or video\_url }
+    \item{[!miku reveal] Reveal last deleted message in a chat}
       \\ \emph{\textbf{and many more interesting commands...}}
   \end{itemize}
   \\ View project at : \underline{\url{https://github.com/HARSH-SHETH/miku}}
