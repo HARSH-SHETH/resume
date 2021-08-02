@@ -1,7 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage{mathptmx}
 \usepackage[utf8]{inputenc}
-\usepackage[margin=0.5in]{geometry}
+\usepackage[left=1cm, top=1cm, right=1cm, bottom=1cm, a4paper]{geometry}
 \usepackage{titlesec}
 \usepackage{amssymb}
 \usepackage{hyperref}
@@ -20,17 +20,19 @@
 
 %FORMAT SECTION 
 \titleformat{\section}{}{}{0em}{\large \textbf}[\titlerule]
+% \titleformat{\subsection}{}{leftmargin}{}{}{}
+\titlespacing{\subsection}{\parindent}{}{0.2cm}
 
 
 %LOGICAL STRUCTURE OF RESUME
 \begin{document}
 %Write your details here
-\section{Harsh Sheth\\ \normalfont ycdtharsh@gmail.com $|$ \normalfont $+$91-9407394270 $|$  \href{https://www.linkedin.com/in/harsh-sheth-2101}{LinkedIn} $|$ \href{https://github.com/harsh-sheth}{Github}}
+\section{Harsh Sheth\\ \normalfont ycdtharsh@gmail.com $|$ \normalfont $+$91-9407394270 $|$  \underline{\href{https://www.linkedin.com/in/harsh-sheth-2101}{LinkedIn}} $|$ \underline{\href{https://github.com/harsh-sheth}{Github}}}
 
 \section{EDUCATION}
 \begin{itemize}
   \item{
-      \textbf{National Institute of Technology, Hamirpur} \hfill \textit{Hamirpur(HP), India}\\
+      \textbf{National Institute of Technology Hamirpur} \hfill \textit{Hamirpur(HP), India}\\
       Dual Degree CSE, CGPA: \textbf{8.34} \hfill \textit{2018 - present}
   } 
   \item{
@@ -44,46 +46,73 @@
 \section{TECHNICAL SKILLS}
 \begin{description}
   \setlength{\itemindent}{\parindent}
-  \item[\normalfont Languages:]{C, \textbf{\textit{Javascript}}, \textbf{\textit{NodeJS}}, Golang}
-  \item[\normalfont Web Technologies:]{\textbf{\textit{Express}}, \textbf{\textit{ReactJS}}, HTML, CSS, Bootstrap}
-  \item[\normalfont Databases:]{\textbf{\textit{MongoDB}}, MYSQL}
-  \item[\normalfont Tools:]{Bash, Neovim, git}
-  \item[\normalfont Coursework:]{Data Structures, \textbf{\textit{Computer Networks}}, Operating Systems, DBMS}
+  \setlength{\itemsep}{0em}
+  \item[Languages:]{C, Javascript, NodeJS, Golang}
+  \item[Web Technologies:]{Express, ReactJS, HTML, CSS, Bootstrap}
+  \item[Databases:]{MongoDB, MYSQL}
+  \item[Tools:]{Bash, Neovim, git}
+  \item[Coursework:]{Data Structures, Computer Networks, Operating Systems}
 \end{description}
 
-% \section{WORK EXPERIENCE}
+% WORK EXPERIENCE
+\section{WORK EXPERIENCE}
+\subsection*{NIT Hamirpur \hfill \normalsize \normalfont \textit{Hamirpur(HP), India}}
+\vspace{-1ex}
+\textsc{\textmd{Research Intern}} \hfill \normalsize \textit{June, 2021 - July, 2021}
+\vspace{-1ex}
 
+\begin{description}
+\setlength{\itemindent}{2\parindent}
+\setlength{\itemsep}{0em}
+\item[$\bullet$]{Implemented a working model to find and detect \textbf{evil twin AP's} inside a network}
+\end{description}
+
+% \subsection*{XYZ Company \hfill \normalsize \normalfont \textit{Somewhere(AB), India}}
+% \vspace{-1ex}
+% \textsc{\textmd{Software Developer Intern}} \hfill \normalsize \textit{present}
+
+% PROJECTS
 \section{PROJECTS}
-\subsection*{Whatsapp Bot \hfill \normalsize \textit{NodeJS, Bash, Heroku, MongoDB}}
-  \parbox{\textwidth}{ Made a whatsapp bot that replies to the following commands:   
+
+%Miku
+\subsection*{Whatsapp Bot(Miku) \hfill \normalsize \textit{NodeJS, Bash, Heroku, MongoDB}}
+  \parbox{\textwidth}{ A bot that performs the following functions:   
+\setlength{\itemsep}{0em}
   \begin{itemize}
+    \item{[!miku sticker] \textbf{Generate sticker from any image, video or video\_url }}
     \item{[!miku sfw $<$category$>$] Send anime pics and gifs of different category}
-    \item{[!miku sticker] Generate sticker from any image, video or video\_url }
     \item{[!miku reveal] Reveal last deleted message in a chat}
-      \\ \emph{\textbf{and many more interesting commands...}}
+      % \\ 
+      \emph{\textbf{and many more interesting commands...}}
   \end{itemize}
-  \\ View project at : \underline{\url{https://github.com/HARSH-SHETH/miku}}
+  \\ \underline{\href{https://github.com/HARSH-SHETH/miku}{Source Code}}
   }
+  \vspace{2mm}
+
+% REST COUNTRIES 
 \subsection*{REST Countries \hfill \normalsize \textit{Javascript, HTML, CSS, API}}
   \parbox{\textwidth}{ Made a frontend website which uses REST Countries API to collect data about different countries\\
    and gives option to sort countries by continent. Also contains a display page for more details about each country and has a beautiful color theme switcher\\
-   View project at : \underline{\url{https://github.com/HARSH-SHETH/REST_Countries_API}}
+   \underline{\href{https://github.com/HARSH-SHETH/REST_Countries_API}{Source Code}}
   }
 
+  \vspace{2mm}
+
+% MEMORY CARD GAME
 \subsection*{Memory Card Game \hfill \normalsize \textit{ReactJS}}
 \parbox{\textwidth}{ Built a Memory Card Game using \textbf{ReactJS} pulling data through RicknMorty api
-\\ View project at : \underline{\url{https://harsh-sheth.github.io/memory_card_game}}
+\\ 
+\underline{\href{https://github.com/memory_card_game}{Source Code}}
+\hfill \underline{\href{https://harsh-sheth.github.io/memory_card_game}{Live Demo}}
 }
+
+%ACHIEVMENTS AND RESPONSIBILITIES
 \section{ACHIEVMENTS AND RESPONSIBILITIES}
 \begin{enumerate}
+  \setlength{\itemsep}{0em}
   \item Won a National Level Certificate for alacritous performance in Youth Parliament.
   \item Volunteer at GLUG-NITH Society
+  \item Executive Member, Hindi Samiti NITH
 \end{enumerate}
-
-% \section{Hobbies}
-% \begin{enumerate}
-%   \item Using opensource and commandline applications on Linux
-%   \item Playing Chess, Football, TableTennis etc.
-% \end{enumerate}
 
 \end{document}
